@@ -1,0 +1,16 @@
+<h1>{{ counter }}</h1>
+<button
+  type="button"
+  class="btn btn-primary"
+  (click)="OnStart(counter, Even, Odd)"
+>
+  Start
+</button>
+<button type="button" class="btn btn-danger" (click)="OnStop()">Stop</button>
+<button type="button" class="btn btn-dark" (click)="OnReset()">Reset</button>
+<div>
+  <app-even Even="{{ Even }}"></app-even>
+</div>
+<div>
+  <app-odd Odd="{{ Odd }}"></app-odd>
+</div>
